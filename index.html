@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - Assignment 3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Extra fonts for the web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style/style.css" rel="stylesheet" />
+    <link
+      href="style/mobile.css"
+      rel="stylesheet"
+      media="screen and (max-width: 810px)"
+    />
+    <link
+      href="style/desktop.css"
+      rel="stylesheet"
+      media="screen and (min-width: 811px)"
+    />
+    <link
+      href="style/tablet.css"
+      rel="stylesheet"
+      media="screen and (max-width: 1190px)"
+    />
+		<!-- Preloading image since the image is quite large -->
+		<link rel="preload" as="image" href="./images/home_slide_0.jpg">
+		<link rel="preload" as="image" href="./images/home_slide_1.png">
+		<link rel="preload" as="image" href="./images/home_slide_2.jpg">
+		<link rel="preload" as="image" href="./images/home_slide_3.jpg">
+    <!-- Awesome font for Twitter, Facebook and Instagram icons -->
+    <script
+      src="https://kit.fontawesome.com/9ed37c8c92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-page="home">
+    <header id="header">
+      <nav class="header--nav">
+        <input
+          type="checkbox"
+          id="header--menu"
+          class="header--menu_shower"
+          value="0"
+        />
+        <label class="header--menu" for="header--menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav--links">
+          <li class="nav--link nav--current">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav--link"><a href="./hometown.html">Hometown</a></li>
+          <li class="nav--link"><a href="./hobby.html">Hobbies</a></li>
+          <li class="nav--link"><a href="./animations.html">Animations</a></li>
+        </ul>
+        <ul class="nav--contacts">
+          <li class="nav--contact">
+            <a href="https://twitter.com/newbee15512665"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li class="nav--contact">
+            <a href="https://github.com/newbee1905"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li class="nav--contact">
+            <a href="https://www.instagram.com/newbee1905.cr2/"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="slide--container">
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="0"
+          value="0"
+          checked
+        />
+        <label for="3" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="1" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/home_slide_0.jpg" alt="Vu Le Minh" />
+          <section class="slide--content_inner">
+            <h2>Introduction</h2>
+            <ul>
+              <li><strong>Name: </strong>Vu Le Minh</li>
+              <li><strong>Age: </strong>18</li>
+              <li><strong>Major: </strong>Software Development</li>
+            </ul>
+            <br />
+            <p>
+              Hello, my name is Vu Le Minh. I am a first-year student who is
+              studying at Swinburne Vietnam, majoring in Software
+              Development.<br /><br />This website is for assignment 3 to show
+              our understandings of the lesson for the last six weeks in
+              COS10005. I will use the most common elements from HTML in this
+              website alongside CSS animations from using transition and
+              keyframes to introduce myself, my hometown and my hobbies.<br /><br />I
+              have used extra resources on this website like Fontawesome for the
+              icons and Google Fonts for a more beautiful font. Besides using
+              what we have learnt, I have not used javascript or any other
+              libraries for fnimations or designs.
+            </p>
+          </section>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="1"
+          value="1"
+        />
+        <label for="0" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="2" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/home_slide_1.png" alt="achievements" />
+          <section class="slide--content_inner">
+            <h2>Achievements</h2>
+            <p>
+              Since this web is created for the COS10005 course so I will list
+              some of the programming knowledge and technologies I have learned
+              as my achievements.
+            </p>
+            <h3>
+              <strong>Technologies I have learnt or been learning</strong>
+            </h3>
+            <ul class="achievements--list_tech">
+              <li>
+                Frontend frameworks/libraries:
+                <span class="achievements--list_level__1">React</span>,
+                <span class="achievements--list_level__1">Svelte</span>
+              </li>
+              <li>
+                Backend frameworks/libraries:
+                <span class="achievements--list_level__1">warp-rs</span>,
+                <span class="achievements--list_level__1">express-js</span>,
+                <span class="achievements--list_level__1">koa-js</span>
+              </li>
+              <li>
+                <span class="achievements--list_level__2">Handling API</span>
+              </li>
+              <li>
+                Database:
+                <span class="achievements--list_level__1">PostgreSQL</span>,
+                <span class="achievements--list_level__1">MongoDB</span>
+              </li>
+            </ul>
+            <h3><strong>Programming Languages I have been using:</strong></h3>
+            <ul class="achievements--list_lang">
+              <li>
+                <span class="achievements--list_level__2">C11/C++11</span>
+              </li>
+              <li>
+                <span class="achievements--list_level__1">Newer C/C++</span>
+              </li>
+              <li><span class="achievements--list_level__1">Rust</span></li>
+              <li><span class="achievements--list_level__1">Go</span></li>
+              <li>
+                <span class="achievements--list_level__2">Javascript</span>
+              </li>
+              <li><span class="achievements--list_level__2">Lua</span></li>
+              <li><span class="achievements--list_level__1">Python</span></li>
+            </ul>
+          </section>
+          <aside class="achievements--list_notes__aside">
+            <h3>Notes:</h3>
+            <ul class="achievements--list_notes">
+              <li>
+                <span class="achievements--list_level__3">Purple</span> = Mastered
+                at the technology
+              </li>
+              <li>
+                <span class="achievements--list_level__2">Yellow</span> =
+                Understand and freely use the technology
+              </li>
+              <li>
+                <span class="achievements--list_level__1">Green</span> = Can
+                use the technology but require reading the documentation
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="2"
+          value="2"
+        />
+        <label for="1" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="3" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/home_slide_2.jpg" alt="timetable" />
+          <section class="slide--content_inner">
+            <h2>Timetable</h2>
+            <table class="timetable">
+              <thead>
+                <th>Date</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+              </thead>
+              <tr>
+                <td>Mon</td>
+                <td class="timetable--gc">GC</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td class="timetable--gc">GC</td>
+                <td class="timetable--ict">ICT</td>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td class="timetable--gc">GC</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Thu</td>
+                <td class="timetable--gc">GC</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td class="timetable--gc">GC</td>
+                <td class="timetable--cos">COS</td>
+              </tr>
+            </table>
+          </section>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="3"
+          value="3"
+        />
+        <label for="2" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="0" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/home_slide_3.jpg" alt="contact_me" />
+          <section class="slide--content_inner">
+            <h2>Contact me</h2>
+            <br />
+            <p>Send me an email:</p>
+            <form
+              class="form--container"
+              target="_blank"
+              action="https://formsubmit.co/aa21f0b5085656c6e61669b2977df209"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                class="form--control"
+                placeholder="Full Name"
+                required
+              />
+              <br />
+              <input
+                type="email"
+                name="email"
+                class="form--control"
+                placeholder="Email Address"
+                required
+              />
+              <br />
+              <textarea
+                placeholder="Your Message"
+                class="form--control"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+              <br />
+              <button type="submit" class="btn">Submit Form</button>
+            </form>
+          </section>
+        </section>
+      </article>
+			<!-- a temp slide to make the height acceptable -->
+      <article class="slide--temp">
+        <section class="slide--content">
+          <img src="" alt="temp" />
+          <section class="slide--content_inner">
+            <h2>Achievements</h2>
+            <p>
+              Since this web is created for the COS10005 course so I will list
+              some of the programming knowledge and technologies I have learned
+              as my achievements.
+            </p>
+            <h3>
+              <strong>Technologies I have learnt or been learning</strong>
+            </h3>
+            <ul class="achievements--list_tech">
+              <li>
+                Frontend frameworks/libraries:
+                <span class="achievements--list_level__1">React</span>,
+                <span class="achievements--list_level__1">Svelte</span>
+              </li>
+              <li>
+                Backend frameworks/libraries:
+                <span class="achievements--list_level__1">warp-rs</span>,
+                <span class="achievements--list_level__1">express-js</span>,
+                <span class="achievements--list_level__1">koa-js</span>
+              </li>
+              <li>
+                <span class="achievements--list_level__2">Handling API</span>
+              </li>
+              <li>
+                Database:
+                <span class="achievements--list_level__1">PostgreSQL</span>,
+                <span class="achievements--list_level__1">MongoDB</span>
+              </li>
+            </ul>
+            <h3><strong>Programming Languages I have been using:</strong></h3>
+            <ul class="achievements--list_lang">
+              <li>
+                <span class="achievements--list_level__2">C11/C++11</span>
+              </li>
+              <li>
+                <span class="achievements--list_level__1">Newer C/C++</span>
+              </li>
+              <li><span class="achievements--list_level__1">Rust</span></li>
+              <li><span class="achievements--list_level__1">Go</span></li>
+              <li>
+                <span class="achievements--list_level__2">Javascript</span>
+              </li>
+              <li><span class="achievements--list_level__2">Lua</span></li>
+              <li><span class="achievements--list_level__1">Python</span></li>
+            </ul>
+          </section>
+          <aside class="achievements--list_notes__aside">
+            <h3>Notes:</h3>
+            <ul class="achievements--list_notes">
+              <li>
+                <span class="achievements--list_level__3">Red</span> = Mastered
+                at the technology
+              </li>
+              <li>
+                <span class="achievements--list_level__2">Orange</span> =
+                Understand and freely use the technology
+              </li>
+              <li>
+                <span class="achievements--list_level__1">Yellow</span> = Can
+                use the technology but require reading the documentation
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </article>
+    </main>
+    <footer>
+			<div>
+				Copyright© 2021: Vu Le Minh/newbee1905
+			</div>
+		</footer>
+  </body>
+</html>

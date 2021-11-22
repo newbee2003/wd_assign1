@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hometown - Assignment 3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Extra fonts for the web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style/style.css" rel="stylesheet" />
+    <link
+      href="style/mobile.css"
+      rel="stylesheet"
+      media="screen and (max-width: 810px)"
+    />
+    <link
+      href="style/desktop.css"
+      rel="stylesheet"
+      media="screen and (min-width: 811px)"
+    />
+    <link
+      href="style/tablet.css"
+      rel="stylesheet"
+      media="screen and (max-width: 1190px)"
+    />
+		<!-- Preloading image since the image is quite large -->
+		<link rel="preload" as="image" href="./images/hometown_slide_0.jpg">
+		<link rel="preload" as="image" href="./images/hometown_slide_1.png">
+    <!-- Awesome font for Twitter, Facebook and Instagram icons -->
+    <script
+      src="https://kit.fontawesome.com/9ed37c8c92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-page="hometown">
+    <header id="header">
+      <nav class="header--nav">
+        <input
+          type="checkbox"
+          id="header--menu"
+          class="header--menu_shower"
+          value="0"
+        />
+        <label class="header--menu" for="header--menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav--links">
+          <li class="nav--link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav--link nav--current">
+            <a href="./hometown.html">Hometown</a>
+          </li>
+          <li class="nav--link"><a href="./hobby.html">Hobbies</a></li>
+          <li class="nav--link"><a href="./animations.html">Animations</a></li>
+        </ul>
+        <ul class="nav--contacts">
+          <li class="nav--contact">
+            <a href="https://twitter.com/newbee15512665"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li class="nav--contact">
+            <a href="https://github.com/newbee1905"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li class="nav--contact">
+            <a href="https://www.instagram.com/newbee1905.cr2/"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="slide--container">
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="0"
+          value="0"
+          checked
+        />
+        <label for="1" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="1" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/hometown_slide_0.jpg" alt="Vu Le Minh" />
+          <section class="slide--content_inner">
+            <h2>The people - The heart of the city</h2>
+            <p>
+              Hanoi, the capital of Vietnam, is a wonderful city with good food
+              and people.<br /><br />Vietnam has been a popular place for
+              tourism, however, the image of its people toward foreigners are
+              not that good because of the scammers. Though these two photos are
+              a small aspect of the people in Hanoi I want to change the existed
+              image about Vietnamese in some people by art.<br /><br />The
+              beautiful drawing from an old artist. This kind of drawing has
+              always been a part of the culture around Guom Lake in Hanoi.<br /><br />Another
+              group is a small band that was playing on Guom Lake. Though the
+              song may only reach a small number of people at the time and it
+              had indeed lightened up the mood around that area.
+            </p>
+          </section>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="1"
+          value="1"
+        />
+        <label for="0" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="0" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/hometown_slide_1.png" alt="achievements" />
+          <section class="slide--content_inner">
+            <h2>The Scenery</h2>
+            <p>
+              Hanoi has a lot of beautiful scenery but the most popular one is
+              probably Guom Lake.<br /><br />The photo on the left may be only a
+              tiny view of a gigantic lake, but it has already shown us the
+              beauty of it. The green tree alongside is blue sky and water -
+              such an impressive view.
+            </p>
+          </section>
+        </section>
+      </article>
+      <article class="slide--temp">
+        <section class="slide--content">
+          <img src="" alt="Vu Le Minh" />
+          <section class="slide--content_inner">
+            <h2>The people - The heart of the city</h2>
+            <p>
+              Hanoi, the capital of Vietnam, is a wonderful city with good food
+              and people.<br /><br />Vietnam has been a popular place for
+              tourism, however, the image of its people toward foreigners are
+              not that good because of the scammers. Though these two photos are
+              a small aspect of the people in Hanoi I want to change the existed
+              image about Vietnamese in some people by art.<br /><br />The
+              beautiful drawing from an old artist. This kind of drawing has
+              always been a part of the culture around Guom Lake in Hanoi.<br /><br />Another
+              group is a small band that was playing on Guom Lake. Though the
+              song may only reach a small number of people at the time and it
+              had indeed lightened up the mood around that area.
+            </p>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div>Copyright© 2021: Vu Le Minh/newbee1905</div>
+    </footer>
+  </body>
+</html>

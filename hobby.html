@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hobby - Assignment 3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Extra fonts for the web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style/style.css" rel="stylesheet" />
+    <link
+      href="style/mobile.css"
+      rel="stylesheet"
+      media="screen and (max-width: 810px)"
+    />
+    <link
+      href="style/desktop.css"
+      rel="stylesheet"
+      media="screen and (min-width: 811px)"
+    />
+    <link
+      href="style/tablet.css"
+      rel="stylesheet"
+      media="screen and (max-width: 1190px)"
+    />
+		<!-- Preloading image since the image is quite large -->
+		<link rel="preload" as="image" href="./images/hobby_slide_0.jpg">
+		<link rel="preload" as="image" href="./images/hobby_slide_1.jpg">
+		<link rel="preload" as="image" href="./images/hobby_slide_2.jpg">
+		<link rel="preload" as="image" href="./images/hobby_slide_3.jpg">
+    <!-- Awesome font for Twitter, Facebook and Instagram icons -->
+    <script
+      src="https://kit.fontawesome.com/9ed37c8c92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-page="hobby">
+    <header id="header">
+      <nav class="header--nav">
+        <input
+          type="checkbox"
+          id="header--menu"
+          class="header--menu_shower"
+          value="0"
+        />
+        <label class="header--menu" for="header--menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav--links">
+          <li class="nav--link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav--link">
+            <a href="./hometown.html">Hometown</a>
+          </li>
+          <li class="nav--link nav--current">
+            <a href="./hobby.html">Hobbies</a>
+          </li>
+          <li class="nav--link"><a href="./animations.html">Animations</a></li>
+        </ul>
+        <ul class="nav--contacts">
+          <li class="nav--contact">
+            <a href="https://twitter.com/newbee15512665"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li class="nav--contact">
+            <a href="https://github.com/newbee1905"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li class="nav--contact">
+            <a href="https://www.instagram.com/newbee1905.cr2/"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="slide--container">
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="0"
+          value="0"
+          checked
+        />
+        <label for="3" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="1" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/hobby_slide_0.jpg" alt="Photography" />
+          <section class="slide--content_inner">
+            <h2>Photography</h2>
+            <p>
+              Photography has been always a part of my life. However, my life as
+              a photographer only started when I started grade 10 and joined the
+              Photography club in my high school.<br /><br />Taking pictures is
+              not only fun, but it also helps you to see closer to details that
+              you normally forgot: the light, the expressions of people, etc.
+            </p>
+          </section>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="1"
+          value="1"
+          checked
+        />
+        <label for="0" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="2" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/hobby_slide_1.jpg" alt="Coding" />
+          <section class="slide--content_inner">
+            <h2>Coding</h2>
+            <p>
+              Many people would think that your job can't be your hobby.<br /><br />
+              However, to me, that sentence is completely wrong. I chose to
+              study programming to make it into a career and I still find joy in
+              coding. Of course, coding can be hard and frustrated at the time,
+              but the feeling of finishing a project or a product is
+              priceless.<br /><br />
+              As a person who majored in Maths, I enjoy solving problems,
+              however, Maths can be unrealistic. To me, programming is using
+              Maths, using logic to solve problems in the world.
+            </p>
+          </section>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="2"
+          value="2"
+          checked
+        />
+        <label for="1" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="3" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/hobby_slide_2.jpg" alt="Reading" />
+          <section class="slide--content_inner">
+            <h2>Reading</h2>
+            <p>
+              Books are knowledge that is given to us by our ancestors. Some of
+              you may say that fictional books can not give you knowledge.<br /><br />However,
+              every book has its own purpose from teaching to telling us the
+              story from the author's eyes. Understanding new things are
+              important but you can not forget about learning about human.<br /><br />Seeing
+              the world from other people's eyes can help enrich your point of
+              view and help you grow further as a person.
+            </p>
+            <p>
+              I will share with you one of my favourite books:
+              <strong><i>The Count of Monte Cristo</i></strong
+              >. This may be not the most meaningful book, and Edmon Dantes is
+              not the best character. However, to me, that is the story that I
+              enjoy, and make me curious about the world. What has the author
+              been through or seen to create a fictional world that cruel and
+              detailed?
+            </p>
+          </section>
+        </section>
+      </article>
+      <article class="slide--group">
+        <input
+          class="slide--id"
+          type="radio"
+          name="slide--id"
+          id="3"
+          value="3"
+          checked
+        />
+        <label for="2" class="previous"
+          ><i class="fas fa-angle-double-left"></i
+        ></label>
+        <label for="0" class="next"
+          ><i class="fas fa-angle-double-right"></i
+        ></label>
+        <section class="slide--content">
+          <img src="./images/hobby_slide_3.jpg" alt="Music" />
+          <section class="slide--content_inner">
+            <h2>Listening to Music</h2>
+            <p>
+              Listening to music is probably has a different meaning to every
+              person. Some may find music to be the thing that helps them during
+              hardship. Some may only listen to music for relaxation. Others may
+              listen to Mozart to improve their efficiency in learning.
+            </p>
+            <p>
+              I am the second type. Listening to music brings me joy and just
+              like books, music can show you the musician's point of view. I
+              enjoy the complexity of classical music though I am still not good
+              enough to fully understand them. My favourite music change from
+              day to day so currently I mostly listen to Japanese music
+              especially from Yoasobi. Some of his works that I enjoy are:
+            </p>
+            <ul>
+              <li>優しい彗星</li>
+              <li>怪物</li>
+              <li>あの夢をなぞって</li>
+              <li>Probably</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+      <article class="slide--temp">
+        <section class="slide--content">
+          <img src="" alt="Vu Le Minh" />
+          <section class="slide--content_inner">
+            <h2>Listening to Music</h2>
+            <p>
+              Listening to music is probably has a different meaning to every
+              person. Some may find music to be the thing that helps them during
+              hardship. Some may only listen to music for relaxation. Others may
+              listen to Mozart to improve their efficiency in learning.
+            </p>
+            <p>
+              I am the second type. Listening to music brings me joy and just
+              like books, music can show you the musician's point of view. I
+              enjoy the complexity of classical music though I am still not good
+              enough to fully understand them. My favourite music change from
+              day to day so currently I mostly listen to Japanese music
+              especially from Yoasobi. Some of his works that I enjoy are:
+            </p>
+            <ul>
+              <li>優しい彗星</li>
+              <li>怪物</li>
+              <li>あの夢をなぞって</li>
+              <li>Probably</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div>Copyright© 2021: Vu Le Minh/newbee1905</div>
+    </footer>
+  </body>
+</html>
